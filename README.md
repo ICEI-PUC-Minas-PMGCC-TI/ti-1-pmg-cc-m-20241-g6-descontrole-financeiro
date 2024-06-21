@@ -1,6 +1,6 @@
 # Nome do projeto
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+Temos o objetivo de ajudar os usuários a compreender e melhorar sua situação financeira, oferecendo ferramentas e recursos para identificar e corrigir hábitos de gastos inadequados. Mostrando os gastos dos clientes, dando a oportunidade de poderem se comuniar atraves de um chat de mensagens no qual todos os usuarios podem usar com o intuito de se ajudarem e orientarem aqueles que chegaram recentemente ao site...
 
 ## Alunos integrantes da equipe
 
