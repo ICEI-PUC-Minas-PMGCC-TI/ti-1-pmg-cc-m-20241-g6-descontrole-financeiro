@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .header {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            width: 90%;
+            max-width: 1200px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 300px;
+        }
+        .profile-info div {
+            margin-bottom: 10px;
+        }
+        .profile-info div span {
+            margin-left: 5px;
+        }
+        .description-section {
+            width: 100%;
+            overflow-x: hidden; /* Impede rolagem horizontal */
+        }
+        .description-section textarea {
+            width: 100%;
+            height: auto; /* Ajusta a altura automaticamente */
+            max-height: 300px; /* Altura máxima */
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: none;
+            overflow-y: auto; /* Habilita rolagem vertical, se necessário */
+            word-wrap: break-word; /* Quebra de palavra */
+        }
+        .edit-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            align-self: center;
+        }
+        .edit-btn:hover {
+            background-color: #0056b3;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            .profile-section {
+                flex: 1;
+                margin-right: 20px;
+                align-items: flex-start;
+            }
+            .description-section {
+                flex: 2;
+                margin-left: 20px;
+            }
+            .description-section textarea {
+                height: 300px;
+            }
+        }
+        @media (max-width: 767px) {
+            .container {
+                padding: 10px;
+                flex-direction: column;
+            }
+            .profile-section {
+                margin-right: 0;
+                align-items: center;
+            }
+            .profile-section img {
+                width: 100px;
+                height: 100px;
+            }
+            .description-section textarea {
+                height: 150px;
+            }
+            .profile-info {
+                max-width: 100%;
+            }
+            .edit-btn {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Menu</h1>
+    </div>
+
+    <div class="container">
+        <div class="profile-section">
+            <img id="profile-pic" src="img/Gato Metaleiro.jpg" alt="Foto de Perfil">
+            <div class="profile-info">
+                <div><strong>Nome de Usuário:</strong><span id="username">Otávio</span></div>
+                <div><strong>Idade:</strong><span id="age">19</span></div>
+                <div><strong>Redes sociais:</strong><span id="socials">https://github.com/OTAVIO019</span></div>
+                <div><strong>E-mail:</strong><span id="email">oamsouza@sga.pucminas.br</span></div>
+                <div><strong>Segundo e-mail:</strong><span id="secondary-email">1504962@sga.pucminas.br</span></div>
+            </div>
+            <button class="edit-btn" onclick="editProfile()">Editar Perfil</button>
+        </div>
+
+        <div class="description-section">
+            <textarea id="description" readonly>Seja bem vindo, me chamo Otávio e esse é um pedaço do site no qual é da sprint 2 da materia de TI. Se você clicar em editar perfil você podera fazer as alterações do nome, da idade, das redes socias, dos dois e-mails, da descrição e da foto de perfil, depois é só clicar em salvar e pronto as suas alterações estão feitas e salvas. Obviamente que se você fechar e abrir o codigo ele vai voltar para oque eu deixei pronto como modelo. O espaço para colocar a imagem é de 150x150, então imagens muito grandes ficarão cortadas, portanto não recomendo, mas vai da sua escolha. OBS: Se você clicar em editar perfil mas não fizer nem uma alteração e depois clicar em salvar ele ira salvar como os proprios nomes que aparecm nos quadros.</textarea>
+        </div>
+    </div>
+
+    <!-- Modal para editar o perfil -->
+    <div id="edit-modal" class="container" style="display: none; flex-direction: column;">
+        <input type="file" id="new-profile-pic" accept="image/*">
+        <div><strong>Nome de Usuário:</strong> <input type="text" id="new-username" value="Usuário"></div>
+        <div><strong>Idade:</strong> <input type="number" id="new-age" value="18"></div>
+        <div><strong>Redes sociais:</strong> <input type="text" id="new-socials" value="@usuario"></div>
+        <div><strong>E-mail:</strong> <input type="email" id="new-email" value="email@example.com"></div>
+        <div><strong>Segundo e-mail:</strong> <input type="email" id="new-secondary-email" value="secondary@example.com"></div>
+        <textarea id="new-description" style="height: 300px;"></textarea> <!-- Ajuste aqui -->
+        <button class="edit-btn" onclick="saveChanges()">Salvar Alterações</button>
+    </div>
+
+    <script>
+        function editProfile() {
+            document.querySelector('.container').style.display = 'none';
+            document.getElementById('edit-modal').style.display = 'flex';
+        }
+
+        function saveChanges() {
+            const newProfilePic = document.getElementById('new-profile-pic').files[0];
+            if (newProfilePic) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('profile-pic').src = e.target.result;
+                }
+                reader.readAsDataURL(newProfilePic);
+            }
+            document.getElementById('username').innerText = document.getElementById('new-username').value;
+            document.getElementById('age').innerText = document.getElementById('new-age').value;
+            document.getElementById('socials').innerText = document.getElementById('new-socials').value;
+            document.getElementById('email').innerText = document.getElementById('new-email').value;
+            document.getElementById('secondary-email').innerText = document.getElementById('new-secondary-email').value;
+            document.getElementById('description').value = document.getElementById('new-description').value;
+
+            document.querySelector('.container').style.display = 'flex';
+            document.getElementById('edit-modal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
