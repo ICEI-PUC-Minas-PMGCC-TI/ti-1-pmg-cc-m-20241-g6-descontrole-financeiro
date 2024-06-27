@@ -1,6 +1,8 @@
 # Nome do projeto
 
-Temos o objetivo de ajudar os usuários a compreender e melhorar sua situação financeira, oferecendo ferramentas e recursos para identificar e corrigir hábitos de gastos inadequados. Mostrando os gastos dos clientes, dando a oportunidade de poderem se comuniar atraves de um chat de mensagens no qual todos os usuarios podem usar com o intuito de se ajudarem e orientarem aqueles que chegaram recentemente ao site...
+Descontrole Financeiro
+
+Temos o objetivo de ajudar os usuários a compreenderem e melhorarem suas situações financeiras, oferecendo ferramentas e recursos para identificarem e corrigirem hábitos de gastos inadequados. Mostrando os gastos dos clientes, dando a oportunidade de poderem se comunicar através de um chat de mensagens no qual todos os usuários podem usar com o intuito de se ajudarem e orientarem aqueles que chegaram recentemente ao site...
 
 ## Alunos integrantes da equipe
 
@@ -15,9 +17,6 @@ Temos o objetivo de ajudar os usuários a compreender e melhorar sua situação 
 * Pedro Henrique Ramos Costa
 * Luciana Mara Freitas Diniz
 * João Carlos Oliveira Caetano
-
-
-
 
 ## Instruções de utilização
 
