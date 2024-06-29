@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="title"><h1>QUAL A IMPORTÂNCIA DE UM PROFISSIONAL?</h1></div>
+    <div class="container">
+        <div class="psi">
+            <h2>Profissionais da psicologia</h2>
+            <p>Profissionais da psicologia desempenham um papel crucial para pessoas com descontrole financeiro, ajudando-as a entender e modificar os comportamentos e padrões emocionais que contribuem para seus problemas econômicos. Eles fornecem suporte para identificar causas subjacentes, como impulsividade, ansiedade ou hábitos enraizados, e desenvolver estratégias de enfrentamento eficazes. Além disso, psicólogos podem trabalhar com indivíduos para fortalecer habilidades de autocontrole, tomada de decisão consciente e planejamento financeiro, promovendo uma relação mais saudável com o dinheiro e reduzindo o estresse associado às dificuldades financeiras.</p>
+        </div>
+        <div class="fin">
+            <h3>Profissionais de finanças</h3>
+            <p>Profissionais da finança e economia são essenciais para ajudar pessoas com descontrole financeiro a alcançar estabilidade e segurança econômica. Eles oferecem orientação especializada em gestão de orçamento, planejamento financeiro e investimento, capacitando os indivíduos a tomar decisões informadas e responsáveis. Esses profissionais ajudam a criar planos financeiros personalizados, identificar e mitigar riscos, e a implementar estratégias para poupança e crescimento patrimonial. Ao fornecer uma visão clara e estruturada das finanças pessoais, eles permitem que as pessoas adquiram o conhecimento e as ferramentas necessárias para alcançar seus objetivos financeiros e evitar armadilhas econômicas.</p>
+        </div>
+        <div class="adm">
+            <h4>Profissionais administrativos</h4>
+            <p>Profissionais da administração são fundamentais para ajudar pessoas com descontrole financeiro a organizar e gerenciar suas finanças de maneira eficiente. Eles aplicam princípios de organização, planejamento e controle para criar sistemas que permitem uma gestão financeira mais eficaz. Com suas habilidades em análise de processos e tomada de decisões estratégicas, esses profissionais podem ajudar a estruturar orçamentos, monitorar despesas e identificar áreas de melhoria. Ao implementar práticas administrativas sólidas, eles capacitam os indivíduos a estabelecer prioridades financeiras claras, otimizar recursos e alcançar maior estabilidade econômica a longo prazo.</p>
+        </div>
+    </div>
+    <br>
+    
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Seja nosso colaborador</h2>
+            <form id="professional-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="specialty">Especialidade:</label>
+                <select id="specialty" name="specialty" required>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Finanças">Finanças</option>
+                    <option value="Administração">Administração</option>
+                </select>
+                
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="state">Estado:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Adicionar Profissional</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Pesquisar Profissional</h2>
+            <form id="search-form">
+                <label for="search-specialty">Especialidade:</label>
+                <select id="search-specialty" name="search-specialty" required>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Finanças">Finanças</option>
+                    <option value="Administração">Administração</option>
+                </select>
+                
+                <label for="search-city">Cidade:</label>
+                <input type="text" id="search-city" name="search-city" required>
+                
+                <label for="search-state">Estado:</label>
+                <input type="text" id="search-state" name="search-state" required>
+                
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <h2>Resultados da Pesquisa</h2>
+            <ul id="results-list"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
