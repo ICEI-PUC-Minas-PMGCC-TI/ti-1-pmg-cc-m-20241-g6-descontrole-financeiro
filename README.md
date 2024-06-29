@@ -18,4 +18,5 @@ Temos o objetivo de ajudar os usuários a compreenderem e melhorarem suas situa�
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para adicionar uma meta digite a quantia em dinheiro, crie ou selecione uma pasta e pressione o botão adicionar. Para editar ou excluir, pressione seus respectivos botões. Ao concluir a meta, aperte o quadrado ao lado esquerdo e uma chuva de confetes irá surgir na tela.
+Para adicionar contato como profissional, adicione os seus dados corretamente e pressione o botão adicionar. Para buscar os contatos como usuário, faça uma busca com a cidade, estado e área do profissional que você procura e pressione o botão de busca. Uma lista será gerada.
