@@ -1,0 +1,182 @@
+/* style.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.psi, .fin, .adm {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: small;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    flex: 1;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px); 
+}
+
+h4, h2, h3 {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.list-container {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label, input, select {
+    margin-bottom: 10px;
+}
+
+button {
+    align-self: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.delete {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: #d32f2f;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+}
+
+.main-container {
+    margin: 20px;
+}
+
+.form-container, .list-container, .edit-container {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"], form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.list-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-container li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container li button {
+    margin-left: 5px;
+}
+
+.edit-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
