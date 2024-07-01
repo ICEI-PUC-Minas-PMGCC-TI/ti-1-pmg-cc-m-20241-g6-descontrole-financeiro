@@ -1,0 +1,62 @@
+/* Estilos gerais */
+body {
+    background-image: url(IMGS/GIF\ DO\ DINHEIRO.gif);
+    background-size: cover; /* Faz com que o GIF cubra toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-repeat: no-repeat; /* Não repete o GIF */  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da janela de visualização */
+    margin: 0;
+    overflow: hidden; /* Evita rolagem, caso o GIF não se ajuste perfeitamente */
+}
+
+/* Container de login */
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.vaidar{
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs e botões */
+.input-container {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%; /*Mexe com a distancia do campo de preenchimento para a borda do quadrado de Login*/
+    padding: 10px; /*Mexe com o tamanho das caixas*/
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+main{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,91 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  margin: 0;
+background-image:url("codigo/assets/images/Imagem do WhatsApp de 2024-05-17 às 16.21.20_96a7d00e.jpg");
+}
+
+header {
+  width: 90%;
+  text-align: center;
+  background-color:  rgb(87, 143, 124);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+header img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+header h3 {
+  display: inline;
+  padding-left: 10px;
+  color: rgb(239, 238, 238);
+  margin: 0 auto;
+}
+
+#pai {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: flex-start;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 30px; 
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+form label {
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+#enviar {
+  border-radius: 15px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+#grafico {
+  width: 60%;
+  margin-top: 20px;
+}
+
+#grafico .card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 10px;
+}
+
+#grafico h5 {
+  text-align: center;
+  padding: 5px;
+  color: black;
+}

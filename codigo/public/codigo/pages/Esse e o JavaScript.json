@@ -1,0 +1,21 @@
+{
+    "perfilUsuario": {
+      "nomeUsuario": "Otávio",
+      "fotoPerfil": "img/Gato Metaleiro.jpg",
+      "idade": 19,
+      "redesSociais": "https://github.com/OTAVIO019",
+      "email": "oamsouza@sga.pucminas.br",
+      "segundoEmail": "1504962@sga.pucminas.br",
+      "sobreMim": "Seja bem vindo, me chamo Otávio e esse é um pedaço do site no qual é da sprint 2 da matéria de TI. Se você clicar em editar perfil você poderá fazer as alterações do nome, da idade, das redes sociais, dos dois e-mails, da descrição e da foto de perfil, depois é só clicar em salvar e pronto as suas alterações estão feitas e salvas. Obviamente que se você fechar e abrir o código ele vai voltar para o que eu deixei pronto como modelo. O espaço para colocar a imagem é de 150x150, então imagens muito grandes ficarão cortadas, portanto não recomendo, mas vai da sua escolha. OBS: Se você clicar em editar perfil mas não fizer nem uma alteração e depois clicar em salvar ele irá salvar como os próprios nomes que aparecem nos quadros."
+    },
+    "editarPerfil": {
+      "editarNomeUsuario": "Editar nome de usuário",
+      "editarFotoPerfil": "Editar foto de perfil",
+      "editarIdade": "Editar idade",
+      "editarRedesSociais": "Editar Redes Sociais",
+      "editarEmail": "Editar E-mail",
+      "editarSegundoEmail": "Editar Segundo E-mail",
+      "editarSobreMim": "Editar Sobre mim",
+      "salvarAlteracoes": "Salvar Alterações"
+    }
+  }
